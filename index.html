@@ -11,8 +11,6 @@
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
   <title>Zmijanac's presentation</title>
   <!--stylesheet-->
-  <link href="styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
-
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,7 +25,7 @@
 
 <body id="page-top">
   <!-- Navigation -->
-  <div class="logo" title="Zmijanac's family">
+  <div class="logo" title="Zmijanac Web Design">
     <img src="images/zmijanac.jpg" alt="Avatar">
   </div>
   <a class="menu-toggle rounded" href="#">
@@ -348,29 +346,12 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="form-wrap">
 
-            <form name="contact-collection" action="contactsub.html" method="post" netlify>
-              <div class="fname floating-label">
-                <input type="text" class="floating-input" name="fname" required/>
-                <label for="title">First Name</label>
-              </div>
-              <div class="fname floating-label">
-                <input type="text" class="floating-input" name="lname" />
-                <label for="title">Last Name</label>
-              </div>
-              <div class="email floating-label">
-                <input type="email" class="floating-input" name="email" required/>
-                <label for="email">Email</label>
-              </div>
-              <div class="contact floating-label">
-                <input type="tel" class="floating-input" name="contact" />
-                <label for="email">Mobile</label>
-              </div>
-              <div class="company floating-label">
-                <textarea type="text" class="floating-input" name="company" /></textarea>
-                <label for="email">Message</label>
-              </div>
+            <form class="w3-container" name="contact-collection" action="contactsub.html" method="post" netlify>
+              <input class="w3-input" type="text" placeholder="Name" required><br>
+              <input class="w3-input" type="email" placeholder="Email" required><br>
+              <input class="w3-input" type="tel" placeholder="Mobile"><br>
+              <textarea class="w3-input" type="text" placeholder="Message"></textarea><br>
               <div class="submit-btn">
                 <button type="submit">Submit</button>
               </div>
