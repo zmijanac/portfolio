@@ -87,6 +87,9 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
   }
+  .btn-primary {
+    border:none;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -177,6 +180,9 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
   }
+  .btn-primary {
+    border:none;
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -248,6 +254,9 @@
   }
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
+  }
+  .btn-primary {
+    border:none;
   }
 }
 /*Large devices (desktops, 992px and up)*/
@@ -321,6 +330,9 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
   }
+  .btn-primary {
+    border:none;
+  }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -362,5 +374,8 @@
   }
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
+  }
+  .btn-primary {
+    border:none;
   }
 }
