@@ -65,6 +65,28 @@
   .owl-nav {
     display: none !important;
   }
+  form input {
+    font-size: 20px;
+    font-family: inherit;
+    color: #4a4a49;
+  }
+  form textarea {
+    font-size: 18px;
+    font-family: inherit;
+    font-style: italic;
+    color: #4a4a49;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 16px;
+    color: grey;
+    opacity: .6;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #02ccba;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #02ccba;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -133,6 +155,28 @@
   .owl-nav {
     display: none !important;
   }
+  form input {
+    font-size: 20px;
+    font-family: inherit;
+    color: #4a4a49;
+  }
+  form textarea {
+    font-size: 18px;
+    font-family: inherit;
+    font-style: italic;
+    color: #4a4a49;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 16px;
+    color: grey;
+    opacity: .6;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #02ccba;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #02ccba;
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -182,6 +226,28 @@
   }
   #Contact .c-icon {
     margin-right: 10px;
+  }
+  form input {
+    font-size: 20px;
+    font-family: inherit;
+    color: #4a4a49;
+  }
+  form textarea {
+    font-size: 18px;
+    font-family: inherit;
+    font-style: italic;
+    color: #4a4a49;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 16px;
+    color: grey;
+    opacity: .6;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #02ccba;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #02ccba;
   }
 }
 /*Large devices (desktops, 992px and up)*/
@@ -233,6 +299,28 @@
   #Contact .c-icon {
     margin-right: 10px;
   }
+  form input {
+    font-size: 20px;
+    font-family: inherit;
+    color: #4a4a49;
+  }
+  form textarea {
+    font-size: 18px;
+    font-family: inherit;
+    font-style: italic;
+    color: #4a4a49;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 16px;
+    color: grey;
+    opacity: .6;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #02ccba;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #02ccba;
+  }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -258,6 +346,12 @@
     font-family: inherit;
     color: #4a4a49;
   }
+  form textarea {
+    font-size: 18px;
+    font-family: inherit;
+    font-style: italic;
+    color: #4a4a49;
+  }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-size: 16px;
     color: grey;
@@ -269,5 +363,4 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #02ccba;
   }
-
 }
