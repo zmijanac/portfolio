@@ -27,8 +27,8 @@
     //  pricing CAROUSEL HOOK
     var owl = $jq('#customers-pricing');
     owl.owlCarousel({
-      loop: true,
-      center: true,
+  //    loop: true,
+  //    center: true,
       items: 3,
       margin: 0,
       autoplay: true,
