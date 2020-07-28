@@ -51,3 +51,8 @@
     });
   });
 })(jQuery)
+
+// togle flip cards
+function flip() {
+  $('.cards').toggleClass('flipped');
+}

@@ -290,35 +290,67 @@
         		</div>
 
             <!--3 Card Pricing-->
-            <div style="padding: 16px 8px;">
-              <div class="w3-card w3-center w3-hover-shadow zoom">
-                <div class="w3-container w3-red" style="padding: 32px 0;">
-                  <h3>Premium</h3>
+            <div class="flipCard" style="padding: 16px 8px;">
+              <section class="flipContainer">
+                <div class="cards">
+                  <div class="frontFlip w3-card w3-center w3-hover-shadow zoom">
+                    <div class="w3-container w3-red" style="padding: 32px 0;">
+                      <h3>Premium</h3>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <br>
+                      <p>Dynamic content</p>
+                      <hr>
+                      <p>Responsive</p>
+                      <hr>
+                      <p>Rocking looks!!!</p>
+                      <hr>
+                      <p>Deployement with support</p>
+                      <hr>
+                      <p><b class="w3-xlarge">€ 50</b>
+                      <br>per project
+                      </p>
+                    </div>
+
+                  <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                    <button class="w3-button w3-black" onclick="flip()">Sign Up</button>
+                  </div>
                 </div>
-                <div class="w3-container w3-white">
-                  <br>
-                  <p>Dynamic content</p>
-                  <hr>
-                  <p>Responsive</p>
-                  <hr>
-                  <p>Rocking looks!!!</p>
-                  <hr>
-                  <p>Deployement with support</p>
-                  <hr>
-                  <p><b class="w3-xlarge">€ 50</b>
-                  <br>per project
-                  </p>
-                </div>
+
+                <div class="backFlip w3-card w3-center w3-hover-shadow zoom">
+                  <div class="w3-container w3-red" style="padding: 32px 0;">
+                    <h3>Premium</h3>
+                  </div>
+                  <div class="w3-container w3-white">
+                    <br>
+                    <p>Dynamic content</p>
+                    <hr>
+                    <p>Responsive</p>
+                    <hr>
+                    <p>Rocking looks!!!</p>
+                    <hr>
+                    <p>Deployement with support</p>
+                    <hr>
+                    <p><b class="w3-xlarge">€ 50</b>
+                    <br>per project
+                    </p>
+                  </div>
+
                 <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                  <button class="w3-button w3-black">Sign Up</button>
+                  <button class="w3-button w3-black" onclick="flip()">Back</button>
                 </div>
               </div>
+
+
+              </div>
+            </section>
             </div>
 
           </div>
         </div>
       </div>
     </div>
+
   </section>
   <!-- END OF pricing -->
   <section id="Contact" class="content-section">
