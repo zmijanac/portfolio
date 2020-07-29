@@ -62,9 +62,6 @@
     width: 50px;
     font-size: 18px;
   }
-  .owl-nav {
-    display: none !important;
-  }
   form input {
     font-size: 20px;
     font-family: inherit;
@@ -91,6 +88,13 @@
     border:none;
   }
   /*flipcard */
+  #Pricing .container .row .part {
+    width: 80%;
+    margin: auto;
+  }
+  .flipCard {
+    height:530px;
+  }
   .flipCard .cards {
       -webkit-transition: -webkit-transform 1s;
       -moz-transition: -moz-transform 1s;
@@ -128,7 +132,30 @@
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
+  .cool-link {
+      display: inline-block;
+      color:white;
+      text-decoration: none;
+  }
 
+  .cool-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: orange;
+      transition: width .3s;
+  }
+
+  .cool-link:hover::after {
+      width: 100%;
+      //transition: width .3s;
+  }
+  section::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -194,9 +221,6 @@
     width: 50px;
     font-size: 18px;
   }
-  .owl-nav {
-    display: none !important;
-  }
   form input {
     font-size: 20px;
     font-family: inherit;
@@ -223,6 +247,12 @@
     border:none;
   }
   /*flipcard */
+  #Pricing .container .row .part {
+    width: 50%;
+  }
+  .flipCard {
+    height:520px;
+  }
   .flipCard .cards {
       -webkit-transition: -webkit-transform 1s;
       -moz-transition: -moz-transform 1s;
@@ -260,11 +290,35 @@
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
-
 }
+.cool-link {
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
   .content-section {
+    display:block;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -305,9 +359,6 @@
     width: 50px;
     font-size: 18px;
   }
-  .owl-nav {
-    display: none !important;
-  }
   #Contact .c-icon {
     margin-right: 10px;
   }
@@ -337,6 +388,12 @@
     border:none;
   }
   /*flipcard */
+  #Pricing .container .row .part {
+    width: 50%;
+  }
+  .flipCard {
+    height:550px;
+  }
   .flipCard .cards {
       -webkit-transition: -webkit-transform 1s;
       -moz-transition: -moz-transform 1s;
@@ -374,11 +431,36 @@
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
+  .cool-link {
+      display: inline-block;
+      color:white;
+      text-decoration: none;
+  }
 
+  .cool-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: orange;
+      transition: width .3s;
+  }
+
+  .cool-link:hover::after {
+      width: 100%;
+      //transition: width .3s;
+  }
+  section::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 }
+
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .content-section {
+    display:block;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -419,9 +501,6 @@
     width: 50px;
     font-size: 18px;
   }
-  .owl-nav {
-    display: none !important;
-  }
   #Contact .c-icon {
     margin-right: 10px;
   }
@@ -451,6 +530,12 @@
     border:none;
   }
   /*flipcard */
+  #Pricing .container .row .part {
+    width: 25%;
+  }
+  .flipCard {
+    height:550px;
+  }
   .flipCard .cards {
       -webkit-transition: -webkit-transform 1s;
       -moz-transition: -moz-transform 1s;
@@ -488,10 +573,39 @@
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
+  .cool-link {
+      display: inline-block;
+      color:white;
+      text-decoration: none;
+  }
 
+  .cool-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: orange;
+      transition: width .3s;
+  }
+
+  .cool-link:hover::after {
+      width: 100%;
+      //transition: width .3s;
+  }
+  section::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .content-section {
+    display:block;
+    overflow: visible;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
   }
@@ -535,6 +649,15 @@
     border:none;
   }
 /*flipcard */
+#Pricing .container .row .part {
+  width: 25%;
+}
+.flipCard {
+  height:550px;
+}
+.flipContainer {
+  position:relative;
+}
 .flipCard .cards {
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: -moz-transform 1s;
@@ -572,7 +695,29 @@
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
-.btn p:hover {
-  color:gray;
+.cool-link {
+    display: inline-block;
+    color:white;
+    text-decoration: none;
 }
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
 }

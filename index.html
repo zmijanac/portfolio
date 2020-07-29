@@ -24,6 +24,7 @@
 </head>
 
 <body id="page-top">
+
   <!-- Navigation -->
   <div class="logo" title="Zmijanac Web Design">
     <img src="images/zmijanac.jpg" alt="Avatar">
@@ -56,18 +57,20 @@
       </li>
     </ul>
   </nav>
+
   <!-- Header Starts -->
   <section id="Banner" class="content-section">
     <div class="container content-wrap text-center">
       <h1>Zmijanac team</h1>
         <h3>
-          <em>websites for individuals and small businesses</em>
+          <em>- websites for individuals and small businesses -</em>
         </h3>
       <a class="btn btn-primary btn-xl smooth-scroll w3-gray w3-card w3-hover-teal w3-btn" href="#About">Find Out More</a>
     </div>
     <div class="overlay"></div>
   </section>
   <!-- Header Ends -->
+
   <!-- About Us Starts -->
   <section id="About" class="content-section">
     <div class="container text-center">
@@ -81,6 +84,7 @@
       </div>
     </div>
   </section>
+
   <!-- About Us Starts -->
   <section id="Services" class="content-section text-center">
     <div class="container">
@@ -150,6 +154,8 @@
       </div>
     </div>
   </section>
+
+  <!--Portfolio-->
   <section class="content-section text-center" id="Portfolio">
     <div class="container">
       <div class="block-heading">
@@ -226,74 +232,190 @@
       </div>
     </div>
   </section>
+
   <!-- Pricing -->
   <section id="Pricing" class="content-section w3-sand">
     <div class="container">
+      <div class="block-heading">
+        <h2>Pricing</h2>
+        <p>Choose a pricing plan that fits your needs.</p>
+      </div>
       <div class="row">
-        <div class="col-sm-12">
-          <div class="block-heading">
-            <h2>Pricing</h2>
-            <p>Choose a pricing plan that fits your needs.</p>
-          </div>
-          <div id="customers-pricing" class="owl-carousel">
 
-            <!--1 Card Pricing-->
-        		<div style="padding: 16px 8px;">
-              <div class="w3-card w3-center w3-hover-shadow zoom">
-                <div class="w3-container w3-teal" style="padding: 32px 0;">
-                  <h3>Basic</h3>
-                </div>
-                <div class="w3-container w3-white">
-                  <br>
-                  <p>One page - presentational</p>
-                  <hr>
-                  <p>Responsive</p>
-                  <hr>
-                  <p>Visually-stimulating</p>
-                  <hr>
-                  <p>Deployement included</p>
-                  <hr>
-                  <p><b class="w3-xlarge">€ 25</b>
-                  <br>per project
-                  </p>
-                </div>
-                <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                  <button class="w3-button w3-teal">Sign Up</button>
-                </div>
-              </div>
-        		</div>
-
-            <!--2 Card Pricing-->
-            <div style="padding: 16px 8px;">
-              <div class="w3-card w3-center w3-hover-shadow zoom">
-                <div class="w3-container w3-black" style="padding: 32px 0;">
-                  <h3>Pro</h3>
-                </div>
-                <div class="w3-container w3-white">
-                  <br>
-                  <p>More then one page</p>
-                  <hr>
-                  <p>Responsive</p>
-                  <hr>
-                  <p>Good looking!!!</p>
-                  <hr>
-                  <p>Deployement included</p>
-                  <hr>
-                  <p><b class="w3-xlarge">€ 35</b>
-                  <br>per project
-                  </p>
-                </div>
-                <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                  <button class="w3-button w3-black">Sign Up</button>
-                </div>
-              </div>
-        		</div>
-
-            <!--3 Card Pricing-->
-            <div class="flipCard" style="padding: 16px 8px;">
+        <!--1 Card Pricing-->
+        <div class="flipCard part" style="padding: 16px 8px;">
               <section class="flipContainer">
                 <!--both sides-->
-                <div class="cards">
+                <div class="cards card1">
+                  <!--front flip-->
+                  <div class="frontFlip w3-card w3-center w3-hover-shadow zoom">
+                    <div class="w3-container w3-teal" style="padding: 32px 0;">
+                      <h3>Basic</h3>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <br>
+                      <p>One page - presentational</p>
+                      <hr>
+                      <p>Responsive</p>
+                      <hr>
+                      <p>Visually stimulating</p>
+                      <hr>
+                      <p>Deployement included</p>
+                      <hr>
+                      <p><b class="w3-xlarge">€ 25</b>
+                      <br>per project
+                      </p>
+                    </div>
+                    <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                      <button class="w3-button w3-teal" onclick="flip1()">Sign Up</button>
+                    </div>
+                  </div>
+                  <!--back flip-->
+                  <div class="backFlip w3-card w3-center w3-hover-shadow zoom">
+                    <div class="w3-container w3-teal" style="padding: 32px 0;">
+                      <div class="btn w3-teal w3-left" onclick="flip1()">
+                        <p class="cool-link">flip back <i class="fa fa-undo" aria-hidden="true"></i></p>
+                      </div>
+                      <h3>Basic</h3>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <br>
+                      <p class="w3-center">Lets get in touch...</p>
+                      <form id="baseform" class="w3-container" name="contact-basic-collection" action="contactsub.html" method="post" netlify>
+                        <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                        <input class="w3-input" name="email" type="email" placeholder="Email" required>
+                        <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
+                        <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
+                        <br>
+                      </form>
+                    </div>
+                    <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                      <button type="submit" form="baseform" class="w3-button w3-teal">Submit</button>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+
+        </div>
+
+        <!--2 Card Pricing-->
+        <div class="flipCard part" style="padding: 16px 8px;">
+                  <section class="flipContainer">
+                    <!--both sides-->
+                    <div class="cards card2">
+                      <!--front flip-->
+                      <div class="frontFlip w3-card w3-center w3-hover-shadow zoom">
+                        <div class="w3-container w3-blue-grey" style="padding: 32px 0;">
+                          <h3>Advanced</h3>
+                        </div>
+                        <div class="w3-container w3-white">
+                          <br>
+                          <p>More then one page</p>
+                          <hr>
+                          <p>Responsive</p>
+                          <hr>
+                          <p>Visually awesome!!!</p>
+                          <hr>
+                          <p>Deployement included</p>
+                          <hr>
+                          <p><b class="w3-xlarge">€ 35</b>
+                          <br>per project
+                          </p>
+                        </div>
+                        <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                          <button class="w3-button w3-blue-grey" onclick="flip2()">Sign Up</button>
+                        </div>
+                      </div>
+                      <!--back flip-->
+                      <div class="backFlip w3-card w3-center w3-hover-shadow zoom">
+                        <div class="w3-container w3-blue-grey" style="padding: 32px 0;">
+                          <div class="btn w3-blue-grey w3-left" onclick="flip2()">
+                            <p class="cool-link">flip back <i class="fa fa-undo" aria-hidden="true"></i></p>
+                          </div>
+                          <h3>Advanced</h3>
+                        </div>
+                        <div class="w3-container w3-white">
+                          <br>
+                          <p class="w3-center">Lets get in touch...</p>
+                          <form id="advanceform" class="w3-container" name="contact-advance-collection" action="contactsub.html" method="post" netlify>
+                            <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                            <input class="w3-input" name="email" type="email" placeholder="Email" required>
+                            <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
+                            <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
+                            <br>
+                          </form>
+                        </div>
+                        <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                          <button type="submit" form="advanceform" class="w3-button w3-blue-grey">Submit</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                </div>
+
+        <!--3 Card Pricing-->
+        <div class="flipCard part" style="padding: 16px 8px;">
+              <section class="flipContainer">
+                <!--both sides-->
+                <div class="cards card3">
+                  <!--front flip-->
+                  <div class="frontFlip w3-card w3-center w3-hover-shadow zoom">
+                    <div class="w3-container w3-black" style="padding: 32px 0;">
+                      <h3>Pro</h3>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <br>
+                      <p>More then one page</p>
+                      <hr>
+                      <p>Responsive</p>
+                      <hr>
+                      <p>Good looking!!!</p>
+                      <hr>
+                      <p>Deployement included</p>
+                      <hr>
+                      <p><b class="w3-xlarge">€ 35</b>
+                      <br>per project
+                      </p>
+                    </div>
+                    <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                      <button class="w3-button w3-black" onclick="flip3()">Sign Up</button>
+                    </div>
+                  </div>
+                  <!--back flip-->
+                  <div class="backFlip w3-card w3-center w3-hover-shadow zoom">
+                    <div class="w3-container w3-black" style="padding: 32px 0;">
+                      <div class="btn w3-black w3-left" onclick="flip3()">
+                        <p class="cool-link">flip back <i class="fa fa-undo" aria-hidden="true"></i></p>
+                      </div>
+                      <h3>Pro</h3>
+                    </div>
+                    <div class="w3-container w3-white">
+                      <br>
+                      <p class="w3-center">Lets get in touch...</p>
+                      <form id="proform" class="w3-container" name="contact-pro-collection" action="contactsub.html" method="post" netlify>
+                        <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                        <input class="w3-input" name="email" type="email" placeholder="Email" required>
+                        <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
+                        <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
+                        <br>
+                      </form>
+                    </div>
+                    <div class="w3-container w3-light-grey" style="padding: 32px 0;">
+                      <button type="submit" form="proform" class="w3-button w3-black">Submit</button>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+            </div>
+
+        <!--4 Card Pricing-->
+        <div class="flipCard part" style="padding: 16px 8px;">
+              <section class="flipContainer">
+                <!--both sides-->
+                <div class="cards card4">
                   <!--front flip-->
                   <div class="frontFlip w3-card w3-center w3-hover-shadow zoom">
                     <div class="w3-container w3-red" style="padding: 32px 0;">
@@ -314,21 +436,21 @@
                       </p>
                     </div>
                     <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                      <button class="w3-button w3-red" onclick="flip()">Sign Up</button>
+                      <button class="w3-button w3-red" onclick="flip4()">Sign Up</button>
                     </div>
                   </div>
                   <!--back flip-->
                   <div class="backFlip w3-card w3-center w3-hover-shadow zoom">
                     <div class="w3-container w3-red" style="padding: 32px 0;">
-                      <div class="btn w3-red w3-left" onclick="flip()">
-                        <p>flip back <i class="fa fa-undo" aria-hidden="true"></i></p>
+                      <div class="btn w3-red w3-left" onclick="flip4()">
+                        <p class="cool-link">flip back <i class="fa fa-undo" aria-hidden="true"></i></p>
                       </div>
                       <h3>Premium</h3>
                     </div>
                     <div class="w3-container w3-white">
                       <br>
                       <p class="w3-center">Lets get in touch...</p>
-                      <form id="proform" class="w3-container" name="contact-pro-collection" action="contactsub.html" method="post" netlify>
+                      <form id="premiumform" class="w3-container" name="contact-premium-collection" action="contactsub.html" method="post" netlify>
                         <input class="w3-input" name="name" type="text" placeholder="Name" required>
                         <input class="w3-input" name="email" type="email" placeholder="Email" required>
                         <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
@@ -337,22 +459,19 @@
                       </form>
                     </div>
                     <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                      <button type="submit" form="proform" class="w3-button w3-red">Submit</button>
+                      <button type="submit" form="premiumform" class="w3-button w3-red">Submit</button>
                     </div>
                   </div>
 
                 </div>
               </section>
             </div>
-            <!--End of 3. Card Pricing-->
-
-          </div>
-        </div>
+        <!--End of 4. Card Pricing-->
       </div>
     </div>
-
   </section>
-  <!-- END OF pricing -->
+
+  <!--Contacts-->
   <section id="Contact" class="content-section">
     <div class="container">
       <div class="block-heading">
@@ -390,10 +509,12 @@
             </form>
 
           </div>
-        </div>
       </div>
     </div>
   </section>
+
+
+  <!--Footer-->
   <footer class="footer text-center">
     <div class="container">
       <ul class="list-inline">
@@ -414,9 +535,10 @@
         </li>
       </ul>
       <p class="text-muted small mb-0">Copyright © Dejan Zmijanac 2020</p>
-      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk">Zmijanac team</p>
+      <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_blank">Zmijanac team</a></p>
     </div>
   </footer>
+
 </body>
 
 </html>

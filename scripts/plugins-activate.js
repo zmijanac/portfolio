@@ -24,35 +24,19 @@
       $jq(".menu-toggle").removeClass("active");
       $jq(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
     });
-    //  pricing CAROUSEL HOOK
-    var owl = $jq('#customers-pricing');
-    owl.owlCarousel({
-  //    loop: true,
-  //    center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots: true,
-      autoplayTimeout: 8500,
-      smartSpeed: 450,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 3
-        },
-        1170: {
-          items: 3
-        }
-      },
-      navigation: true,
-      navigationText: true
-    });
   });
 })(jQuery)
 
 // togle flip cards
-function flip() {
-  $('.cards').toggleClass('flipped');
+function flip1() {
+  $('.card1').toggleClass('flipped');
+}
+function flip2() {
+  $('.card2').toggleClass('flipped');
+}
+function flip3() {
+  $('.card3').toggleClass('flipped');
+}
+function flip4() {
+  $('.card4').toggleClass('flipped');
 }
