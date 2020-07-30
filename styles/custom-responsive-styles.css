@@ -9,8 +9,10 @@
   }
   .logo img {
     width:140px;
-  /*  border:1px solid yellow;
-    border-radius:50%; */
+    transition: width 1s;
+    }
+  .logo img:hover{
+    width:310px;
   }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
@@ -137,7 +139,6 @@
       color:white;
       text-decoration: none;
   }
-
   .cool-link::after {
       content: '';
       display: block;
@@ -146,7 +147,6 @@
       background: orange;
       transition: width .3s;
   }
-
   .cool-link:hover::after {
       width: 100%;
       transition: width .3s;
@@ -164,8 +164,10 @@
   }
   .logo img {
     width:140px;
-/* border:1px solid yellow;
-    border-radius:50%; */
+    transition: width 1s;
+    }
+  .logo img:hover{
+    width:310px;
   }
   .content-section {
     padding-top: 70px;
@@ -290,13 +292,11 @@
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
-}
 .cool-link {
     display: inline-block;
     color:white;
     text-decoration: none;
 }
-
 .cool-link::after {
     content: '';
     display: block;
@@ -305,7 +305,6 @@
     background: orange;
     transition: width .3s;
 }
-
 .cool-link:hover::after {
     width: 100%;
     transition: width .3s;
@@ -315,6 +314,7 @@ section::after {
   clear: both;
   display: table;
   }
+}
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
   .content-section {
@@ -330,8 +330,10 @@ section::after {
   }
   .logo img {
     width:150px;
-  /*  border:1px solid yellow;
-    border-radius:50%; */
+    transition: width 1s;
+    }
+  .logo img:hover{
+    width:350px;
   }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
@@ -442,7 +444,6 @@ section::after {
       color:white;
       text-decoration: none;
   }
-
   .cool-link::after {
       content: '';
       display: block;
@@ -451,7 +452,6 @@ section::after {
       background: orange;
       transition: width .3s;
   }
-
   .cool-link:hover::after {
       width: 100%;
       transition: width .3s;
@@ -462,7 +462,6 @@ section::after {
     display: table;
     }
 }
-
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .content-section {
@@ -472,10 +471,12 @@ section::after {
   }
   .logo img {
     width:180px;
-  /*  border:1px solid yellow;
-    border-radius:50%; */
+    transition: width 1s;
+    }
+  .logo img:hover{
+    width:440px;
   }
-  #Banner {
+    #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
   }
   #Banner .content-wrap h1 {
@@ -584,7 +585,6 @@ section::after {
       color:white;
       text-decoration: none;
   }
-
   .cool-link::after {
       content: '';
       display: block;
@@ -593,7 +593,6 @@ section::after {
       background: orange;
       transition: width .3s;
   }
-
   .cool-link:hover::after {
       width: 100%;
       transition: width .3s;
@@ -617,8 +616,10 @@ section::after {
   }
   .logo img {
     width:180px;
-    /*border:1px solid yellow;
-    border-radius:50%; */
+    transition: width 1s;
+    }
+  .logo img:hover{
+    width:440px;
   }
   .zoom {
     transition: transform .2s; /* Animation */
@@ -706,7 +707,6 @@ section::after {
     color:white;
     text-decoration: none;
 }
-
 .cool-link::after {
     content: '';
     display: block;
@@ -715,7 +715,6 @@ section::after {
     background: orange;
     transition: width .3s;
 }
-
 .cool-link:hover::after {
     width: 100%;
     transition: width .3s;
@@ -725,5 +724,4 @@ section::after {
   clear: both;
   display: table;
   }
-
 }
