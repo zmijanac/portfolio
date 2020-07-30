@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="portfolio">
   <meta name="author" content="Zmijanac's team">
-  <meta name="keywords" content="presentation, portfolio, template, responsive, mobile friendly, bootstrap">
+  <meta name="keywords" content="zmijanac, web design, websites for individuals small, business, fast, responsive, mobile friendly, bootstrap">
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-  <title>Zmijanac's presentation</title>
+  <title>Zmijanac Web design</title>
+
   <!--stylesheet-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -287,7 +288,7 @@
                       <br>
                       <p class="w3-center">Lets get in touch...</p>
                       <form id="baseform" class="w3-container" name="contact-basic-collection" action="contactsub.html" method="post" netlify>
-                        <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                        <input id="someName1" class="w3-input" name="name" type="text" placeholder="Name" required>
                         <input class="w3-input" name="email" type="email" placeholder="Email" required>
                         <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
                         <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
@@ -295,7 +296,7 @@
                       </form>
                     </div>
                     <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                      <button type="submit" form="baseform" class="w3-button w3-teal">Submit</button>
+                      <button type="submit" form="baseform" class="w3-button w3-teal" onclick="cacheName1()">Submit</button>
                     </div>
                   </div>
 
@@ -344,7 +345,7 @@
                           <br>
                           <p class="w3-center">Lets get in touch...</p>
                           <form id="advanceform" class="w3-container" name="contact-advance-collection" action="contactsub.html" method="post" netlify>
-                            <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                            <input id="someName2" class="w3-input" name="name" type="text" placeholder="Name" required>
                             <input class="w3-input" name="email" type="email" placeholder="Email" required>
                             <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
                             <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
@@ -352,7 +353,7 @@
                           </form>
                         </div>
                         <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                          <button type="submit" form="advanceform" class="w3-button w3-blue-grey">Submit</button>
+                          <button type="submit" form="advanceform" class="w3-button w3-blue-grey" onclick="cacheName2()">Submit</button>
                         </div>
                       </div>
 
@@ -380,7 +381,7 @@
                       <hr>
                       <p>Deployement included</p>
                       <hr>
-                      <p><b class="w3-xlarge">€ 35</b>
+                      <p><b class="w3-xlarge">€ 45</b>
                       <br>per project
                       </p>
                     </div>
@@ -400,7 +401,7 @@
                       <br>
                       <p class="w3-center">Lets get in touch...</p>
                       <form id="proform" class="w3-container" name="contact-pro-collection" action="contactsub.html" method="post" netlify>
-                        <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                        <input id="someName3" class="w3-input" name="name" type="text" placeholder="Name" required>
                         <input class="w3-input" name="email" type="email" placeholder="Email" required>
                         <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
                         <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
@@ -408,7 +409,7 @@
                       </form>
                     </div>
                     <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                      <button type="submit" form="proform" class="w3-button w3-black">Submit</button>
+                      <button type="submit" form="proform" class="w3-button w3-black" onclick="cacheName3()">Submit</button>
                     </div>
                   </div>
 
@@ -436,7 +437,7 @@
                       <hr>
                       <p>Deployement with support</p>
                       <hr>
-                      <p><b class="w3-xlarge">€ 50</b>
+                      <p><b class="w3-xlarge">€ 55</b>
                       <br>per project
                       </p>
                     </div>
@@ -456,7 +457,7 @@
                       <br>
                       <p class="w3-center">Lets get in touch...</p>
                       <form id="premiumform" class="w3-container" name="contact-premium-collection" action="contactsub.html" method="post" netlify>
-                        <input class="w3-input" name="name" type="text" placeholder="Name" required>
+                        <input id="someName4" class="w3-input" name="name" type="text" placeholder="Name" required>
                         <input class="w3-input" name="email" type="email" placeholder="Email" required>
                         <input class="w3-input" name="mobile" type="tel" placeholder="Mobile">
                         <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea>
@@ -464,7 +465,7 @@
                       </form>
                     </div>
                     <div class="w3-container w3-light-grey" style="padding: 32px 0;">
-                      <button type="submit" form="premiumform" class="w3-button w3-red">Submit</button>
+                      <button type="submit" form="premiumform" class="w3-button w3-red" onclick="cacheName4()">Submit</button>
                     </div>
                   </div>
 
@@ -504,12 +505,12 @@
         <div class="col-sm-12 col-md-6 col-lg-6">
 
             <form class="w3-container" name="contact-collection" action="contactsub.html" method="post" netlify>
-              <input class="w3-input" name="name" type="text" placeholder="Name" required><br>
+              <input id="someName" class="w3-input" name="name" type="text" placeholder="Name" required><br>
               <input class="w3-input" name="email" type="email" placeholder="Email" required><br>
               <input class="w3-input" name="mobile" type="tel" placeholder="Mobile"><br>
               <textarea class="w3-input" name="message" type="text" placeholder="Message"></textarea><br>
               <div class="submit-btn">
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="cacheName()">Submit</button>
               </div>
             </form>
 
