@@ -9,8 +9,8 @@
   }
   .logo img {
     width:140px;
-    border:1px solid yellow;
-    border-radius:50%;
+  /*  border:1px solid yellow;
+    border-radius:50%; */
   }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
@@ -164,8 +164,8 @@
   }
   .logo img {
     width:140px;
-    border:1px solid yellow;
-    border-radius:50%;
+/* border:1px solid yellow;
+    border-radius:50%; */
   }
   .content-section {
     padding-top: 70px;
@@ -330,8 +330,8 @@ section::after {
   }
   .logo img {
     width:150px;
-    border:1px solid yellow;
-    border-radius:50%;
+  /*  border:1px solid yellow;
+    border-radius:50%; */
   }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
@@ -472,8 +472,8 @@ section::after {
   }
   .logo img {
     width:180px;
-    border:1px solid yellow;
-    border-radius:50%;
+  /*  border:1px solid yellow;
+    border-radius:50%; */
   }
   #Banner {
     background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
@@ -617,8 +617,8 @@ section::after {
   }
   .logo img {
     width:180px;
-    border:1px solid yellow;
-    border-radius:50%;
+    /*border:1px solid yellow;
+    border-radius:50%; */
   }
   .zoom {
     transition: transform .2s; /* Animation */
