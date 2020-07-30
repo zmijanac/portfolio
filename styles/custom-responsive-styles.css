@@ -322,6 +322,12 @@ section::after {
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  #Services .service-box .service-content h3 {
+    display:none;
+  }
+  #Services .service-box .service-content p {
+    font-size: 12px;
+  }
   .logo img {
     width:150px;
     border:1px solid yellow;
