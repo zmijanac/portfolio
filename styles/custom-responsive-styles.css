@@ -1,688 +1,48 @@
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) {
-  .content-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .logo {
-    font-size: 40px;
-  }
-  .logo img {
-    width:140px;
-    transition: width 1s;
-    }
-  .logo img:hover{
-    width:310px;
-  }
-  #Banner {
-    background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
-  }
-  #Banner .content-wrap h1 {
-    font-size: 36px;
-  }
-  #Banner .content-wrap h3 {
-    font-size: 20px;
-  }
-  .btn-xl {
-    padding: 15px 30px;
-  }
-  .content-section-heading h2 {
-    font-size: 30px;
-  }
-  #Portfolio .portfolio-wrapper .each-portfolio {
-    float: none;
-    margin: 0 auto 20px;
-    width: 100%;
-    display: block;
-  }
-  #customers-pricing .item {
-    margin-bottom: 0;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    -ms-transform: scale(0.95); /* IE 9 */
-    transform: scale(0.95);
-  }
-  .zoom:hover {
-    transform: scale(1); /* (100% zoom) */
-    -ms-transform: scale(1); /* IE 9 */
-  }
-  #Contact .contact-wrapper {
-    border-right: none;
-    margin-right: 0;
-    padding: 0;
-  }
-  #Contact .contact-wrapper span {
-    font-size: 18px;
-  }
-  #Contact .address-block.border-bottom {
-    margin-bottom: 40px;
-    padding: 0 15px 30px;
-  }
-  footer.footer .social-link {
-    height: 50px;
-    width: 50px;
-    font-size: 18px;
-  }
-  form input {
-    font-size: 20px;
-    font-family: inherit;
-    color: #4a4a49;
-  }
-  form textarea {
-    font-size: 18px;
-    font-family: inherit;
-    font-style: italic;
-    color: #4a4a49;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 16px;
-    color: grey;
-    opacity: .6;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #02ccba;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #02ccba;
-  }
-  .btn-primary {
-    border:none;
-  }
-  /*flipcard */
-  #Pricing .container .row .part {
-    width: 80%;
-    margin: auto;
-  }
-  .flipCard {
-    height:530px;
-  }
-  .flipCard .cards {
-      -webkit-transition: -webkit-transform 1s;
-      -moz-transition: -moz-transform 1s;
-      -o-transition: -o-transform 1s;
-      transition: transform 1s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transform-origin: 50% 50%;
-  }
-  .flipCard .cards .frontFlip {
-      width:100%;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden;
-  }
-  .flipCard .cards .backFlip {
-    width:100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .flipCard .cards.flipped {
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .cool-link {
-      display: inline-block;
-      color:white;
-      text-decoration: none;
-  }
-  .cool-link::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: orange;
-      transition: width .3s;
-  }
-  .cool-link:hover::after {
-      width: 100%;
-      transition: width .3s;
-  }
-  section::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
+body {
+  box-sizing: border-box;
 }
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767px) {
-  .logo i {
-    font-size: 40px;
-  }
-  .logo img {
-    width:140px;
-    transition: width 1s;
-    }
-  .logo img:hover{
-    width:310px;
-  }
-  .content-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  #Banner {
-    background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
-  }
-  #Banner .content-wrap h1 {
-    font-size: 36px;
-  }
-  #Banner .content-wrap h3 {
-    font-size: 20px;
-  }
-  .btn-xl {
-    padding: 15px 30px;
-  }
-  .content-section-heading h2 {
-    font-size: 30px;
-  }
-  #Portfolio .portfolio-wrapper .each-portfolio {
-    float: none;
-    margin: 0 auto 20px;
-    width: 100%;
-    display: block;
-  }
-  #customers-pricing .item {
-    margin-bottom: 0;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    -ms-transform: scale(0.95); /* IE 9 */
-    transform: scale(0.95);
-  }
-  .zoom:hover {
-    transform: scale(1); /* (100% zoom) */
-    -ms-transform: scale(1); /* IE 9 */
-  }
-  #Contact .contact-wrapper {
-    border-right: none;
-    margin-right: 0;
-    padding: 0;
-  }
-  #Contact .contact-wrapper span {
-    font-size: 18px;
-  }
-  #Contact .address-block.border-bottom {
-    margin-bottom: 40px;
-    padding: 0 15px 30px;
-  }
-  footer.footer .social-link {
-    height: 50px;
-    width: 50px;
-    font-size: 18px;
-  }
-  form input {
-    font-size: 20px;
-    font-family: inherit;
-    color: #4a4a49;
-  }
-  form textarea {
-    font-size: 18px;
-    font-family: inherit;
-    font-style: italic;
-    color: #4a4a49;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 16px;
-    color: grey;
-    opacity: .6;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #02ccba;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #02ccba;
-  }
-  .btn-primary {
-    border:none;
-  }
-  /*flipcard */
-  #Pricing .container .row .part {
-    width: 50%;
-  }
-  .flipCard {
-    height:520px;
-  }
-  .flipCard .cards {
-      -webkit-transition: -webkit-transform 1s;
-      -moz-transition: -moz-transform 1s;
-      -o-transition: -o-transform 1s;
-      transition: transform 1s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transform-origin: 50% 50%;
-  }
-  .flipCard .cards .frontFlip {
-      width:100%;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden;
-  }
-  .flipCard .cards .backFlip {
-    width:100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .flipCard .cards.flipped {
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-.cool-link {
-    display: inline-block;
-    color:white;
-    text-decoration: none;
+
+/* Header */
+#Banner {
+  background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
 }
-.cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: orange;
-    transition: width .3s;
+
+/* Content-section */
+.content-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
-.cool-link:hover::after {
-    width: 100%;
-    transition: width .3s;
+
+/* Price FlipCards */
+/* zoom cards */
+.zoom {
+  transition: transform .2s;
+  transform: scale(0.95);
 }
-section::after {
-  content: "";
-  clear: both;
-  display: table;
-  }
-}
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .content-section {
-    display:block;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  #Services .service-box .service-content h3 {
-    display:none;
-  }
-  #Services .service-box .service-content p {
-    font-size: 12px;
-  }
-  .logo img {
-    width:150px;
-    transition: width 1s;
-    }
-  .logo img:hover{
-    width:350px;
-  }
-  #Banner {
-    background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
-  }
-  #Banner .content-wrap h1 {
-    font-size: 40px;
-  }
-  #Banner .content-wrap h3 {
-    font-size: 24px;
-  }
-  .btn-xl {
-    padding: 20px 30px;
-  }
-  .content-section-heading h2 {
-    font-size: 30px;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    -ms-transform: scale(0.95); /* IE 9 */
-    transform: scale(0.95);
-  }
-  .zoom:hover {
-    transform: scale(1); /* (100% zoom) */
-    -ms-transform: scale(1); /* IE 9 */
-  }
-  #Contact .contact-wrapper span {
-    font-size: 16px;
-  }
-  footer.footer .social-link {
-    height: 50px;
-    width: 50px;
-    font-size: 18px;
-  }
-  #Contact .c-icon {
-    margin-right: 10px;
-  }
-  form input {
-    font-size: 20px;
-    font-family: inherit;
-    color: #4a4a49;
-  }
-  form textarea {
-    font-size: 18px;
-    font-family: inherit;
-    font-style: italic;
-    color: #4a4a49;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 16px;
-    color: grey;
-    opacity: .6;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #02ccba;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #02ccba;
-  }
-  .btn-primary {
-    border:none;
-  }
-  /*flipcard */
-  #Pricing .container .row .part {
-    width: 50%;
-  }
-  .flipCard {
-    height:550px;
-  }
-  .flipCard .cards {
-      -webkit-transition: -webkit-transform 1s;
-      -moz-transition: -moz-transform 1s;
-      -o-transition: -o-transform 1s;
-      transition: transform 1s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transform-origin: 50% 50%;
-  }
-  .flipCard .cards .frontFlip {
-      width:100%;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden;
-  }
-  .flipCard .cards .backFlip {
-    width:100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .flipCard .cards.flipped {
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .cool-link {
-      display: inline-block;
-      color:white;
-      text-decoration: none;
-  }
-  .cool-link::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: orange;
-      transition: width .3s;
-  }
-  .cool-link:hover::after {
-      width: 100%;
-      transition: width .3s;
-  }
-  section::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-}
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .content-section {
-    display:block;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .logo img {
-    width:180px;
-    transition: width 1s;
-    }
-  .logo img:hover{
-    width:440px;
-  }
-    #Banner {
-    background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
-  }
-  #Banner .content-wrap h1 {
-    font-size: 40px;
-  }
-  #Banner .content-wrap h3 {
-    font-size: 24px;
-  }
-  .btn-xl {
-    padding: 20px 30px;
-  }
-  .content-section-heading h2 {
-    font-size: 30px;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    -ms-transform: scale(0.95); /* IE 9 */
-    transform: scale(0.95);
-  }
-  .zoom:hover {
-    transform: scale(1); /* (100% zoom) */
-    -ms-transform: scale(1); /* IE 9 */
-  }
-  #Contact .contact-wrapper span {
-    font-size: 16px;
-  }
-  footer.footer .social-link {
-    height: 50px;
-    width: 50px;
-    font-size: 18px;
-  }
-  #Contact .c-icon {
-    margin-right: 10px;
-  }
-  form input {
-    font-size: 20px;
-    font-family: inherit;
-    color: #4a4a49;
-  }
-  form textarea {
-    font-size: 18px;
-    font-family: inherit;
-    font-style: italic;
-    color: #4a4a49;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 16px;
-    color: grey;
-    opacity: .6;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #02ccba;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #02ccba;
-  }
-  .btn-primary {
-    border:none;
-  }
-  /*flipcard */
-  #Pricing .container .row .part {
-    width: 25%;
-  }
-  .flipCard {
-    height:550px;
-  }
-  .flipCard .cards {
-      -webkit-transition: -webkit-transform 1s;
-      -moz-transition: -moz-transform 1s;
-      -o-transition: -o-transform 1s;
-      transition: transform 1s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transform-origin: 50% 50%;
-  }
-  .flipCard .cards .frontFlip {
-      width:100%;
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden;
-  }
-  .flipCard .cards .backFlip {
-    width:100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .flipCard .cards.flipped {
-      -webkit-transform: rotateY( 180deg );
-      -moz-transform: rotateY( 180deg );
-      -o-transform: rotateY( 180deg );
-      transform: rotateY( 180deg );
-  }
-  .cool-link {
-      display: inline-block;
-      color:white;
-      text-decoration: none;
-  }
-  .cool-link::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: orange;
-      transition: width .3s;
-  }
-  .cool-link:hover::after {
-      width: 100%;
-      transition: width .3s;
-  }
-  section::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-}
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .content-section {
-    display:block;
-    overflow: visible;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  #Banner {
-    background: linear-gradient(274deg, #7dbabd, #5c5c80 44%, #3e212e);
-  }
-  .logo img {
-    width:180px;
-    transition: width 1s;
-    }
-  .logo img:hover{
-    width:440px;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    -ms-transform: scale(0.95); /* IE 9 */
-    transform: scale(0.95);
-  }
-  .zoom:hover {
-    transform: scale(1); /* (100% zoom) */
-    -ms-transform: scale(1); /* IE 9 */
-  }
-  form input {
-    font-size: 20px;
-    font-family: inherit;
-    color: #4a4a49;
-  }
-  form textarea {
-    font-size: 18px;
-    font-family: inherit;
-    font-style: italic;
-    color: #4a4a49;
-  }
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 16px;
-    color: grey;
-    opacity: .6;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #02ccba;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #02ccba;
-  }
-  .btn-primary {
-    border:none;
-  }
-/*flipcard */
-#Pricing .container .row .part {
-  width: 25%;
-}
-.flipCard {
-  height:550px;
+.zoom:hover {
+  transform: scale(1);
 }
 .flipContainer {
   position:relative;
 }
 .flipCard .cards {
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
 }
 .flipCard .cards .frontFlip {
-    width:100%;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
+  width:100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .flipCard .cards .backFlip {
   width:100%;
@@ -691,37 +51,372 @@ section::after {
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
 }
 .flipCard .cards.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
 }
+/* flip back underline animations */
 .cool-link {
-    display: inline-block;
-    color:white;
-    text-decoration: none;
+  display: inline-block;
+  color:white;
+  text-decoration: none;
 }
 .cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: orange;
-    transition: width .3s;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width .3s;
 }
 .cool-link:hover::after {
-    width: 100%;
-    transition: width .3s;
+  width: 100%;
+  transition: width .3s;
 }
+
+/* Portfolio */
+/* Portfolio Slide from bottom */
+.portContainer {
+  position: relative;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px gray;
+}
+.portImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.portOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.portContainer:hover .portOverlay {
+  height: 100%;
+}
+.portText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity:1;
+}
+
+/* Contact Form*/
+form input {
+  font-size: 20px;
+  font-family: inherit;
+  color: #4a4a49;
+}
+form textarea {
+  font-size: 18px;
+  font-family: inherit;
+  font-style: italic;
+  color: #4a4a49;
+}
+::placeholder {
+  font-size: 16px;
+  color: grey;
+  opacity: .6;
+}
+.btn-primary {
+  border:none;
+}
+
+/* Footer */
+footer.footer .social-link {
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+}
+
+/* Clearfix */
 section::after {
   content: "";
   clear: both;
   display: table;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+  /* Logo Image */
+  .logo {
+    font-size: 40px;
   }
+  .logo img {
+    width:140px;
+    transition: width 1s;
+  }
+  .logo img:hover{
+    width:310px;
+  }
+
+/* Header */
+  #Banner .content-wrap h1 {
+    font-size: 36px;
+  }
+  #Banner .content-wrap h3 {
+    font-size: 20px;
+  }
+  .btn-xl {
+    padding: 15px 30px;
+  }
+  .content-section-heading h2 {
+    font-size: 30px;
+  }
+
+  /*flipcard */
+  #Pricing .container .row .part {
+    width: 80%;
+    margin: auto;
+  }
+  .flipCard {
+    height:530px;
+  }
+  /* Portfolio */
+  /* Slide in overlay from bottom*/
+  .portWrapper {
+    display:inline-block;
+    padding: 15px;
+    width:100%;
+  }
+
+  /* Contact */
+  #Contact .contact-wrapper {
+    border-right: none;
+    margin-right: 0;
+    padding: 0;
+  }
+  #Contact .contact-wrapper span {
+    font-size: 18px;
+  }
+  #Contact .address-block.border-bottom {
+    margin-bottom: 40px;
+    padding: 0 15px 30px;
+  }
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+  /* Logo Image */
+  .logo i {
+    font-size: 40px;
+  }
+  .logo img {
+    width:140px;
+    transition: width 1s;
+  }
+  .logo img:hover{
+    width:310px;
+  }
+
+ /* Header */
+  #Banner .content-wrap h1 {
+    font-size: 36px;
+  }
+  #Banner .content-wrap h3 {
+    font-size: 20px;
+  }
+  .btn-xl {
+    padding: 15px 30px;
+  }
+  .content-section-heading h2 {
+    font-size: 30px;
+  }
+
+  /*flipcard */
+  #Pricing .container .row .part {
+    width: 50%;
+  }
+  .flipCard {
+    height:520px;
+  }
+
+  /* Portfolio */
+  /* Slide in overlay from bottom*/
+  .portWrapper {
+    display:inline-block;
+    padding: 15px;
+    width:50%;
+  }
+
+  /* Contact */
+  #Contact .contact-wrapper {
+    border-right: none;
+    margin-right: 0;
+    padding: 0;
+  }
+  #Contact .contact-wrapper span {
+    font-size: 18px;
+  }
+  #Contact .address-block.border-bottom {
+    margin-bottom: 40px;
+    padding: 0 15px 30px;
+  }
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Logo Image */
+  .logo img {
+    width:150px;
+    transition: width 1s;
+  }
+  .logo img:hover{
+    width:350px;
+  }
+
+  /* Header */
+  #Banner .content-wrap h1 {
+    font-size: 40px;
+  }
+  #Banner .content-wrap h3 {
+    font-size: 24px;
+  }
+  .btn-xl {
+    padding: 20px 30px;
+  }
+  .content-section-heading h2 {
+    font-size: 30px;
+  }
+  .content-section {
+    display:block;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  /* About */
+  #Services .service-box .service-content h3 {
+    display:none;
+  }
+  #Services .service-box .service-content p {
+    font-size: 12px;
+  }
+
+  /*flipcard */
+  #Pricing .container .row .part {
+    width: 50%;
+  }
+  .flipCard {
+    height:550px;
+  }
+
+  /* Portfolio */
+  /* Slide in overlay from bottom*/
+  .portWrapper {
+    display:inline-block;
+    padding: 15px;
+    width:33%;
+  }
+
+  /* Contact */
+  #Contact .contact-wrapper span {
+    font-size: 16px;
+  }
+  #Contact .c-icon {
+    margin-right: 10px;
+  }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Logo image */
+  .logo img {
+    width:180px;
+    transition: width 1s;
+  }
+  .logo img:hover{
+    width:440px;
+  }
+
+  /* Header */
+  #Banner .content-wrap h1 {
+    font-size: 40px;
+  }
+  #Banner .content-wrap h3 {
+    font-size: 24px;
+  }
+  .btn-xl {
+    padding: 20px 30px;
+  }
+  .content-section-heading h2 {
+    font-size: 30px;
+  }
+
+  /*Flipcard */
+  #Pricing .container .row .part {
+    width: 25%;
+  }
+  .flipCard {
+    height:550px;
+  }
+
+  /* Portfolio */
+  /* Slide in overlay from bottom*/
+  .portWrapper {
+    padding: 15px;
+    width:33%;
+  }
+
+  /* Contact */
+  #Contact .contact-wrapper span {
+    font-size: 16px;
+  }
+  #Contact .c-icon {
+    margin-right: 10px;
+  }
+
+}
+
+/*Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  /* Logo Image */
+  .logo img {
+    width:180px;
+    transition: width 1s;
+  }
+  .logo img:hover{
+    width:440px;
+  }
+
+  /* Flipcard */
+  #Pricing .container .row .part {
+    width: 25%;
+  }
+  .flipCard {
+    height:550px;
+  }
+
+  /* Portfolio */
+  /* Slide in overlay from bottom*/
+  .portWrapper {
+    padding: 15px;
+    width:33%;
+  }
+
 }
