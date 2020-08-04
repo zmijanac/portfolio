@@ -161,7 +161,7 @@ footer.footer .social-link {
 }
 
 /* Clearfix */
-section::after {
+.row::after, section::after {
   content: "";
   clear: both;
   display: table;
@@ -328,7 +328,7 @@ section::after {
 
   /*flipcard */
   #Pricing .container .row .part {
-    width: 50%;
+    width: 33%;
   }
   .flipCard {
     height:550px;
@@ -379,7 +379,7 @@ section::after {
 
   /*Flipcard */
   #Pricing .container .row .part {
-    width: 25%;
+    width: 33%;
   }
   .flipCard {
     height:550px;
@@ -415,7 +415,7 @@ section::after {
 
   /* Flipcard */
   #Pricing .container .row .part {
-    width: 25%;
+    width: 33%;
   }
   .flipCard {
     height:550px;
